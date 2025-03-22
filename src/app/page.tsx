@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import ChatbotWrapper from "../components/ChatbotWrapper";
-import RouteBox from "../components/RouteBox";
+import RouteBox from "../components/RteBx2";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <header className="flex items-center justify-between p-6 bg-white shadow">
         <div className="flex items-center gap-3">
           <Image src="/dolo.png" alt="Company Logo" width={40} height={40} />
-          <h1 className="text-xl font-bold">Harvest Union</h1>
+          <h1 className="text-xl font-bold">DOLO</h1>
         </div>
         <nav>
           <a href="#about" className="px-4 text-sm hover:text-blue-600">About</a>

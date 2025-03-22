@@ -21,22 +21,22 @@ export default function RouteBox() {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 shadow-md rounded p-6">
-      <h3 className="text-lg font-medium mb-4 dark:text-white">Route Calculator</h3>
+    <div className="bg-white shadow-md rounded p-6">
+      <h3 className="text-lg font-medium mb-4">Route Calculator</h3>
       <div className="flex flex-col gap-4">
         <input 
           type="text" 
           placeholder="Enter origin" 
           value={origin} 
           onChange={(e) => setOrigin(e.target.value)}
-          className="border rounded p-2 bg-gray-50 dark:bg-gray-700 dark:text-white"
+          className="border rounded p-2"
         />
         <input 
           type="text" 
           placeholder="Enter destination" 
           value={destination} 
           onChange={(e) => setDestination(e.target.value)}
-          className="border rounded p-2 bg-gray-50 dark:bg-gray-700 dark:text-white"
+          className="border rounded p-2"
         />
         <button 
           onClick={handleCompute} 
@@ -46,16 +46,10 @@ export default function RouteBox() {
         </button>
       </div>
       {results && (
-        <div className="mt-4 border-t pt-4 dark:border-gray-600">
-          <p className="dark:text-white">
-            <strong>Distance:</strong> {results.distance}
-          </p>
-          <p className="dark:text-white">
-            <strong>Weather:</strong> {results.weather}
-          </p>
-          <p className="dark:text-white">
-            <strong>Route:</strong> {results.route}
-          </p>
+        <div className="mt-4 border-t pt-4">
+          <p><strong>Distance:</strong> {results.distance}</p>
+          <p><strong>Weather:</strong> {results.weather}</p>
+          <p><strong>Route:</strong> {results.route}</p>
         </div>
       )}
     </div>
