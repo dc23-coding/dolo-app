@@ -1,14 +1,20 @@
-// tailwind.config.js
+// filepath: /Users/cleshay/Documents/WebApp/WorldofAllegory/dolo-app/tailwind.config.js
 module.exports = {
-    darkMode: 'class', // Enable dark mode via a CSS class (e.g., "dark")
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-      extend: {},
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
+      fontFamily: {
+        sans: ['var(--font-sans)', 'sans-serif'],
+        mono: ['var(--font-mono)', 'monospace'],
+      },
     },
-    plugins: [],
-  };
-
-  
+  },
+  plugins: [],
+};

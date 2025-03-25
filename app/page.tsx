@@ -1,4 +1,4 @@
-
+// page.tsx
 import Image from "next/image";
 import ChatbotWrapper from "../components/ChatbotWrapper";
 import RouteBox from "../components/RteBx2";
@@ -13,9 +13,15 @@ export default function Home() {
           <h1 className="text-xl font-bold">DOLO</h1>
         </div>
         <nav>
-          <a href="#about" className="px-4 text-sm hover:text-blue-600">About</a>
-          <a href="#services" className="px-4 text-sm hover:text-blue-600">Services</a>
-          <a href="#contact" className="px-4 text-sm hover:text-blue-600">Contact</a>
+          <a href="#about" className="px-4 text-sm hover:text-blue-600">
+            About
+          </a>
+          <a href="#services" className="px-4 text-sm hover:text-blue-600">
+            Services
+          </a>
+          <a href="#contact" className="px-4 text-sm hover:text-blue-600">
+            Contact
+          </a>
         </nav>
       </header>
 
