@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { auth } from "@clerk/nextjs/server";
 
 
 export default function DashboardPage() {
