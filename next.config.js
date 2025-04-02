@@ -1,19 +1,12 @@
+// next.config.js
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async headers() {
-      return [
-        {
-          source: "/(.*)",
-          headers: [
-            {
-              key: "Content-Security-Policy",
-              value: "script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; object-src 'none';",
-            },
-          ],
-        },
-      ];
-    },
-  };
-  
-  module.exports = nextConfig;
-  
+  reactStrictMode: true,
+  experimental: {
+    serverActions: true,
+    appDir: true,
+  },
+};
+
+module.exports = nextConfig;
